@@ -6,16 +6,23 @@ from kivy.core.window import Window
 # from kivy.uix.image import Image
 # from kivy.uix.floatlayout import FloatLayout
 
-Builder.load_file('float_layout.kv')
+Builder.load_file('update_label.kv')
 
 
 class MyLayout(Widget):
-    pass
+    def press(self):
+        name = self.ids.name_input.text
+        print(name)
+
+        self.ids.name_label.text = f"Hello {name}!"
+
+        self.ids.name_input.text = ''
+
 
 
 class AwesomeApp(App):
     def build(self):
-        Window.clearcolor = (1, 1, 1, 1)
+        # Window.clearcolor = (1, 1, 1, 1)
         return MyLayout()
 
 
