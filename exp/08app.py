@@ -4,8 +4,9 @@ from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 from kivy.core.window import Window
 # from kivy.uix.image import Image
+# from kivy.uix.floatlayout import FloatLayout
 
-Builder.load_file('images.kv')
+Builder.load_file('float_layout.kv')
 
 
 class MyLayout(Widget):
