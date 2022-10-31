@@ -3,7 +3,7 @@ from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 
-Builder.load_file('inherit.kv')
+Builder.load_file('label_color.kv')
 
 
 class MyLayout(Widget):
