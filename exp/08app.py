@@ -2,8 +2,9 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
+from kivy.core.window import Window
 
-Builder.load_file('label_color.kv')
+Builder.load_file('bg.kv')
 
 
 class MyLayout(Widget):
@@ -12,6 +13,7 @@ class MyLayout(Widget):
 
 class AwesomeApp(App):
     def build(self):
+        Window.clearcolor = (1, 0, 0, 1)
         return MyLayout()
 
 
