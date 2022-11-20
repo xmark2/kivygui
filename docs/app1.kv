@@ -1,0 +1,49 @@
+MDBoxLayout:
+    orientation: 'vertical'
+    spacing: dp(10)
+    padding: dp(20)
+
+    MDBoxLayout:
+        adaptive_height: True
+
+        MDIconButton:
+            icon: 'magnify'
+
+        MDTextField:
+            id: search_field
+            hint_text: 'Search icon'
+            on_text: root.set_list_md_icons(self.text, True)
+
+    MDBoxLayout:
+        MDIconButton:
+            icon: 'magnify'
+        MDCheckbox:
+        MDLabel:
+            id: check_box
+            text: "Check box"
+            halign: "left"
+
+        # defining size to check box
+        # size: "48dp", "48dp"
+        # size_hint: None,None
+
+        # giving location
+        # pos_hint: {'center_x': .5, 'center_y': .5}
+
+    MDBoxLayout:
+
+        MDNavigationRail:
+
+            MDNavigationRailItem:
+                text: "Account"
+                icon: "account"
+
+            MDNavigationRailItem:
+                text: "JavaScript"
+                icon: "language-javascript"
+
+            MDNavigationRailItem:
+                text: "Exit"
+                icon: "exit-run"
+
+        MDScreen:
