@@ -1,0 +1,17 @@
+#filename my.kv
+
+<MyCustomForm@BoxLayout>:
+    orientation: "vertical"
+    BoxLayout:
+        orientation: "vertical"
+        Button:
+            text: "Add"
+        Button:
+            text: "Remove"
+#        Filechooser:
+#            id: filechooser
+        BoxLayout:
+            orientation: "vertical"
+            TextInput:
+                hint: "Address"
+                multiline: False

@@ -1,15 +1,12 @@
-import kivy
-from kivy.app import App
-from kivy.uix.button import Button
-from kivy.uix.label import Label
-kivy.require("1.0.6")
+from exp1 import LabelTestingApp
+from exp2 import MyApp
+from exp3 import MainApplication
+from exp4 import BoxtestApp
+from exp5 import MainApplication
 
-
-class LabelTestingApp(App):
-    pass
-    # def build(self):
-        # return Button(text="I can Display information over screen")
-
-
-if __name__ == '__main__':
-    LabelTestingApp().run()
+if __name__ == "__main__":
+    # LabelTestingApp().run()
+    # MyApp().run()
+    # MainApplication().run()
+    # BoxtestApp().run()
+    MainApplication().run()
