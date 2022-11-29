@@ -6,8 +6,9 @@ kivy.require("1.0.6")
 
 
 class LabelTestingApp(App):
-    def build(self):
-        return Button(text="I can Display information over screen")
+    pass
+    # def build(self):
+        # return Button(text="I can Display information over screen")
 
 
 if __name__ == '__main__':
