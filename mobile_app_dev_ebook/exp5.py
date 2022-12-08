@@ -6,7 +6,7 @@ from kivy.uix.button import Button
 class MainApplication(App):
     def build(self):
         layout = BoxLayout(orientation='vertical')
-        btn1 = Button(text='Hello', size=(200,100), size_hint=(None, None))
+        btn1 = Button(text='Hello', size=(200, 100), size_hint=(None, None))
         btn2 = Button(text='Kivy', size_hint=(.5, 1))
         btn3 = Button(text='World', size_hint=(.5, 1))
         layout.add_widget(btn1)
