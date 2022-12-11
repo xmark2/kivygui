@@ -1,0 +1,41 @@
+#:kivy 1.8.1
+#:include button.kv
+
+<CustomLayout>:
+#    BoxLayout:
+#        orientation: "vertical"
+    GridLayout:
+        rows: 2
+#        orientation: "vertical"
+#        size: root.width, root.height
+
+        GridLayout:
+            cols: 2
+			rows: 1
+			size_hint: 1, 0.1
+
+            SpecialButton:
+                text: 'Includes!'
+                size_hint: 1, 1
+#                pos_hint: {'top': 1}
+            ExitButton:
+                text: 'Exit'
+                size_hint: 0.1, 1
+#                pos_hint: {'top': 1}
+
+        BoxLayout:
+            size_hint: 1, 0.9
+
+            Accordion:
+                orientation: 'vertical'
+                pos_hint: {'top': 1}
+
+                AccordionItem:
+                    title: 'Panel1'
+                    collapse: False
+
+                AccordionItem:
+                    title: 'Panel2'
+
+                AccordionItem:
+                    title: 'Panel3'
