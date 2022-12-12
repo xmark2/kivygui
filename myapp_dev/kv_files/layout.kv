@@ -1,0 +1,37 @@
+<CustomLayout>:
+    GridLayout:
+        rows: 2
+
+        GridLayout:
+            cols: 2
+			rows: 1
+			size_hint: 1, 0.1
+
+            SpecialButton:
+                text: 'Includes!'
+                size_hint: 1, 1
+            ExitButton:
+                text: 'Exit'
+                size_hint: 0.1, 1
+
+        BoxLayout:
+            size_hint: 1, 0.9
+
+            Accordion:
+                orientation: 'vertical'
+                pos_hint: {'top': 1}
+
+                AccordionItem:
+                    title: 'Panel1'
+                    collapse: False
+
+                    CheckBoxLayout:
+
+                AccordionItem:
+                    title: 'Panel2'
+
+                    CustomBoxLayout:
+
+
+                AccordionItem:
+                    title: 'Panel3'
