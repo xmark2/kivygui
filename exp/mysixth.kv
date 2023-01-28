@@ -31,10 +31,13 @@
                 id: color
                 multiline:False
 
-        Button:
-            text: "Submit"
-            font_size: 32
-            on_press: root.press()
-            background_normal: ''
-            # background_color: (1,0,0,1)
-            background_color: utils.get_color_from_hex('#eefa00')
+        BoxLayout:
+            FloatLayout:
+            Button:
+                text: "Submit"
+    #            font_size: 32
+                size: root.width, root.height/3
+                on_press: root.press()
+                background_normal: ''
+                # background_color: (1,0,0,1)
+                background_color: utils.get_color_from_hex('#eefa00')

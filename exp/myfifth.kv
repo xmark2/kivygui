@@ -13,23 +13,42 @@
 
             Label:
                 text: "Name"
+                size_hint: (1, None)
+#                height: 30
+#                size_hint: (.2, 1)
+
             TextInput:
                 id: name
+                size_hint: (1, None)
+#                height: 30
                 multiline:False
+#                height: self.minimum_height
+
+
 
             Label:
                 text: "Favorite Pizza"
+                size_hint: (1, None)
+#                height: 30
             TextInput:
                 id: pizza
+                size_hint: (1, None)
+#                height: 30
                 multiline:False
 
             Label:
                 text: "Favorite Color"
+                size_hint: (1, None)
+#                height: 30
             TextInput:
                 id: color
+                size_hint: (1, None)
+#                height: 30
                 multiline:False
 
         Button:
             text: "Submit"
-            font_size: 32
+            size_hint: (1, None)
+            height: 30
+#            font_size: 32
             on_press: root.press()
